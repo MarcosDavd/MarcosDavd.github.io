@@ -21,17 +21,7 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: calc(40px + 2vw);     
 }
-.elemento{
-    list-style-type: none;
-    flex: 1 0 auto;
-    background-color: #e6e9e9;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    text-align:center;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-}
+
 #container{
     justify-content: center;
     margin: 0%;
@@ -40,6 +30,13 @@ h1{
     grid-template-columns: repeat(5,200px);
     grid-gap: 10px;
 }
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*agregando*/
 /*agregando*/
 
 img{
