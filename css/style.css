@@ -1,0 +1,72 @@
+body{
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_1280.png);
+    color: #e6e9e9;
+}
+li{
+    list-style: none;
+}
+h1{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.elemento{
+    list-style-type: none;
+    flex: 1 0 auto;
+    background-color: #e6e9e9;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align:center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    grid-gap: 10px;
+}
+img{
+    border-radius: 20px;
+    width: 150px;
+    height: 170px;
+}
+button{
+    
+    background-color: black;
+    color: #e6e9e9;
+    border-radius: 10px;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #45a049;
+    color: black;
+}
+#buttons{
+    justify-content: center; 
+    text-align: center;
+    height: 25px;
+    display: flex;
+    margin: 0;
+
+}
+button:hover{
+    animation: parpadeo 1.5s infinite; /* Aplica la animaciÃ³n de parpadeo */
+}
+
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1; /* 100% de opacidad */
+  }
+  50% {
+    opacity: 0; /* 0% de opacidad */
+  }
+  100% {
+    opacity: 1; /* 100% de opacidad */
+  }
+}   
