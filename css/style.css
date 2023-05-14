@@ -40,6 +40,7 @@ h1{
     grid-template-columns: repeat(5,200px);
     grid-gap: 10px;
 }
+/*agregando*/
 @media screen and (max-width: 600px) {
     #container {
         grid-template-columns: repeat(2, 1fr);
